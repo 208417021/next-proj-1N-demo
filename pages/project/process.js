@@ -11,6 +11,7 @@ export default function process() {
             <p>7. 依照老師的講義，以及Teams上所需求，完成剩下部分，測試data讀取正常</p>
             <p>8. 套上Navbar並新增此頁及簡單說明製作過程</p>
             <p>9. 新增GitHub Respository，繳交作業</p>
+            <p>10. 由於run dev不會報錯，因此並無發現問題，Vercel一直建置失敗，npm run build發現錯誤，修正global.css格式錯誤導致Vercel失敗的問題</p>
         </div>
     )
 }
