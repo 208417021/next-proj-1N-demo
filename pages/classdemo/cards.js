@@ -1,5 +1,5 @@
 import Layout from '../../components/Layout';
-import cards from './data';
+import cards from '../../data';
 import styles from '../../styles/Cards.module.scss';
 
 export default function CardsPage() {
