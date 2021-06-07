@@ -67,10 +67,10 @@ $animation-curve: cubic-bezier(1, 0, 0, 1);
     }
 
     .nav {
-        position: fixed;
+        // position: fixed;
         width: 100vw;
         box-shadow: 0 0 10px $clr-gray300;
-        background: $clr-gray100;
+        // background: $clr-gray100;
         font-size: 1.2rem;
         z-index: 10;
     

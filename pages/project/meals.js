@@ -9,8 +9,9 @@ import { faRandom } from "@fortawesome/free-solid-svg-icons"; // faRandom button
 
 export default function meals() {
     return (
+        <Layout>
         <div>
-            <Layout>
+            
             <div className={styles.container}>
                 <h1>Meal Finder</h1>
                 <div className={styles.flex}>
@@ -96,8 +97,9 @@ export default function meals() {
                     ))}
                 </section>
             </div>
-            </Layout>
+            
         </div>
+        </Layout>
     )
 }
 
