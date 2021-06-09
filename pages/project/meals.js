@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import styles from '../../styles/Meals.module.css';
 import cards_styles from '../../styles/Cards.module.scss';
 import cards from '../../meals-data';
@@ -8,6 +8,25 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icon
 import { faRandom } from "@fortawesome/free-solid-svg-icons"; // faRandom button
 
 export default function meals() {
+    const [input,setInput] = useState('')
+    const [mealData, setMealData] = useState([])
+
+    const handleInput = (e) => {
+        setInput(e.target.value)
+    }
+    console.log(input);
+
+    const handleSubmit = (e) =>{
+        e.preventDefault()
+        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`)
+        .then(res => res.json())
+        .catch(error => console.error('Error',error))
+        .then(res => {
+            console.log(res)
+            setMealData(res.meals)
+        })
+    }
+
     return (
         <Layout>
         <div>
@@ -16,12 +35,8 @@ export default function meals() {
                 <h1>Meal Finder</h1>
                 <div className={styles.flex}>
                     <form className={styles.flex} id="submit">
-                        <input
-                            type="text"
-                            id="search"
-                            placeholder="Search for meals or keywords"
-                        />
-                        <button className={styles.search_btn} type="submit">
+                    <input type="text" value={input} placeholder="Search for meals or keywords" className={styles.input} onChange={handleInput}/>
+                        <button className={styles.search_btn} type="submit" onClick={handleSubmit}>
                             <FontAwesomeIcon icon={faSearch}></FontAwesomeIcon>
                         </button>
                     </form>
@@ -31,77 +46,28 @@ export default function meals() {
                 </div>
 
                 <div id="result-heading"></div>
+                <div id="result-heading" className={styles.title__search}><h1>Search Results for ' {input} ' :</h1></div>
+                <div id="meals" className={styles.gallery}>
 
-                <div id="meals" className={styles.meals}>
-                    <div className={styles.meal}>
-                        <img
-                            src="https://www.themealdb.com/images/media/meals/1529446137.jpg"
-                            alt="Egg Drop Soup"
-                        />
-                        <div className={styles.meal_info} data-mealid="52955">
-                            <h3>Egg Drop Soup</h3>
-                        </div>
-                    </div>
-
-                    <div className={styles.meal}>
-                        <img
-                            src="https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg"
-                            alt="Tuna and Egg Briks"
-                        />
-                        <div className={styles.meal_info} data-mealid="52975">
-                            <h3>Tuna and Egg Briks</h3>
-                        </div>
-                    </div>
-
-                    <div className={styles.meal}>
-                        <img
-                            src="https://www.themealdb.com/images/media/meals/1550440197.jpg"
-                            alt="Salmon Eggs Eggs Benedict"
-                        />
-                        <div className={styles.meal_info} data-mealid="52962">
-                            <h3>Salmon Eggs Eggs Benedict</h3>
-                        </div>
-                    </div>
-
-                    <div className={styles.meal}>
-                        <img
-                            src="https://www.themealdb.com/images/media/meals/ysqrus1487425681.jpg"
-                            alt="Roasted Eggplant With Tahini, Pine Nuts, and Lentils"
-                        />
-                        <div className={styles.meal_info} data-mealid="52816">
-                            <h3>Roasted Eggplant With Tahini, Pine Nuts, and Lentils</h3>
-                        </div>
-                    </div>
-
-                    <div className={styles.meal}>
-                        <img
-                            src="https://www.themealdb.com/images/media/meals/yqwtvu1487426027.jpg"
-                            alt="Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt"
-                        />
-                        <div className={styles.meal_info} data-mealid="52817">
-                            <h3>Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt</h3>
-                        </div>
-                    </div>
+                       {mealData.map((meal)=>(
+                           <div className={styles["gallery-card"]}>
+                             <img className={styles["gallery-card__img"]} src={meal.strMealThumb} alt={meal.strMeal}/>
+                             <div className={styles["gallery-card__details"]} data-mealid={meal.idMeal}> 
+                               <h2>{meal.strMeal}</h2>
+                             </div>
+                           </div>
+                        //<Meal key={meal.id} name={meal.name} image={meal.image}></Meal>
+                       ))}
                 </div>
 
                 <div id="single-meal"></div>
-
-                <section className={cards_styles.card_container}>
-                    {cards.map((card) => (
-                        <Card
-                            key={card.id}
-                            image={card.image}
-                            title={card.title}
-                            description={card.description}
-                        />
-                    ))}
-                </section>
             </div>
             
         </div>
         </Layout>
     )
 }
+
 
 function Card({ image, title, description }) {
     return (
