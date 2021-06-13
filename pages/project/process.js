@@ -1,6 +1,8 @@
+import Layout from '../../components/Layout2';
+
 export default function process() {
     return (
-        <div>
+        <Layout>
             <strike>Kill me plz</strike>
             <p>1. 先把老師在Teams上的next-proj-1N-demo.zip、mealDB-theme.zip下載下來</p>
             <p>2. 建立pages/project/meals.js並把老師的mealDB內的index.html整理成meals</p>
@@ -12,6 +14,6 @@ export default function process() {
             <p>8. 套上Navbar並新增此頁及簡單說明製作過程</p>
             <p>9. 新增GitHub Respository，繳交作業</p>
             <p>10. 由於run dev不會報錯，因此並無發現問題，Vercel一直建置失敗，npm run build發現錯誤，修正global.css格式錯誤導致Vercel失敗的問題</p>
-        </div>
+        </Layout>
     )
 }

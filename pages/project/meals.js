@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from '../../styles/Meals.module.css';
 import cards_styles from '../../styles/Cards.module.scss';
 import cards from '../../meals-data';
-import Layout from '../../components/Layout2/Layout'
+import Layout from '../../components/Layout2'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { faRandom } from "@fortawesome/free-solid-svg-icons"; // faRandom button
@@ -22,8 +22,12 @@ export default function meals() {
         .then(res => res.json())
         .catch(error => console.error('Error',error))
         .then(res => {
-            console.log(res)
-            setMealData(res.meals)
+            console.log(res);
+            if(res.meals === null){
+                console.log("searching failed");
+                return;
+            }else
+                setMealData(res.meals);
         })
     }
 
