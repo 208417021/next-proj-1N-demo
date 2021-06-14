@@ -22,7 +22,7 @@ export default function process() {
             <p>　 並認識className在React Compoent運作大致原理(state改變時就會產生新的object)</p>
             <p>2. 完成Navbar、Footer、Layout</p>
             <p>3. 依照專題所求，嘗試不少網路資源來完成首頁，目前使用簡單card的待之後可以放入學校<a className={styles.hide}>的垃圾</a>作業</p>
-            <p>4. 依照專題所求，建立StarAPI app，並push至GitHub<a className={styles.hide}>，但我實在不知道StarAPI到底要用來幹嘛</a></p>
+            <p>4. 依照專題所求，建立StrAPI app，並push至GitHub<a className={styles.hide}>，但我實在不知道StrAPI到底要用來幹嘛</a></p>
         </Layout>
     )
 }
