@@ -15,15 +15,15 @@ export default function Nav2() {
 
             console.log(x.className);
             if (!x.className.includes("responsive")) {
-                x.className += " responsive";
+                x.className = `${styles.topnav} ${styles.responsive}`;
             } else {
-                x.className = "Nav2_topnav__1zXlc";
+                x.className = `${styles.topnav}`;
             }
     }
 
     return (
         <div>
-            <div className={styles["topnav"]} id="myTopnav">
+            <div className={`${styles.topnav}`} id="myTopnav">
                 <a href="/" className={styles.active}>Home</a>
                 <a href="/project/meals">MealDB</a>
                 <a href="/project/process">Process</a>

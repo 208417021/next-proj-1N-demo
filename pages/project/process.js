@@ -1,4 +1,5 @@
 import Layout from '../../components/Layout2';
+import styles from '../../styles/Process.module.css'
 
 export default function process() {
     return (
@@ -14,6 +15,12 @@ export default function process() {
             <p>8. 套上Navbar並新增此頁及簡單說明製作過程</p>
             <p>9. 新增GitHub Respository，繳交作業</p>
             <p>10. 由於run dev不會報錯，因此並無發現問題，Vercel一直建置失敗，npm run build發現錯誤，修正global.css格式錯誤導致Vercel失敗的問題</p>
+            <br />
+            <p>6/14專題完成內容</p>
+            <p>1. Navbar resposive一直失效，查了許多相關資料，發現Function Compoent可以克服目前遇到之問題，改用Function Compoent替代原本的Function(此過程耗費我6小時的時間)</p>
+            <p>　　　並認識className在React Compoent運作大致原理(state改變時就會產生新的object)</p>
+            <p>2. 依照專題所求，嘗試不少網路資源來完成首頁，目前使用簡單card的待之後可以放入學校<a className={styles.hide}>的垃圾</a>作業</p>
+            <p>3. 依照專題所求，建立StarAPI app，並push至GitHub<a className={styles.hide}>，但我實在不知道StarAPI到底要用來幹嘛</a></p>
         </Layout>
     )
 }
