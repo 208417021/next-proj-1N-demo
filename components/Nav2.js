@@ -25,20 +25,18 @@ export default function Nav2() {
         <div>
             <div className={`${styles.topnav}`} id="myTopnav">
                 <a href="/" className={styles.active}>Home</a>
-                <a href="/project/meals">MealDB</a>
-                <a href="/project/process">Process</a>
+                <a href="#about">About</a>
                 <div className={styles.dropdown}>
-                    <button className={styles.dropbtn}>Dropdown
+                    <button className={styles.dropbtn}>Project
                         <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
                     </button>
                     <div className={styles["dropdown-content"]}>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="/project/meals">MealDB</a>
+                        <a href="/project/shop">Shop</a>
+                        <a href="/project/process">Process</a>
                     </div>
                 </div>
-        
-                <a href="#about">About</a>
+    
                 <a href="#" className={styles.icon} onClick={myFunction}>&#9776;</a>
                 
             </div>
