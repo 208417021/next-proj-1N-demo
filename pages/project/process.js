@@ -29,7 +29,7 @@ export default function process() {
             <p>2. Strapi post到Cloudinary正常，一張圖片生成三張圖(原始、預覽用、壓縮圖)</p>
             <p>3. 將Strapi depoly部屬至Heroku</p>
             <p>4. 為配合Project需求，參考網路資源；建立Shop頁面，使得Strapi之上傳圖片可以被運用到</p>
-            <p>5. 修該部分細節(navbar連結、每頁title等)</p>
+            <p>5. 修改一些細節(navbar連結、每頁title、首頁Index連結等)</p>
         </Layout>
     )
 }

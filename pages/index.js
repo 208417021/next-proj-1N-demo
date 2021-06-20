@@ -11,9 +11,9 @@ export default function index() {
                     <div className={styles.box}>
                         <div className={styles.content}>
                             <h2>01</h2>
-                            <h3>Card One</h3>
+                            <h3>MealDB</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-                            <a href="#">Read More</a>
+                            <a href="/project/meals">Link</a>
                         </div>
                     </div>
                 </div>
@@ -22,9 +22,9 @@ export default function index() {
                         <div className={styles.box}>
                             <div className={styles.content}>
                                 <h2>02</h2>
-                                <h3>Card Two</h3>
+                                <h3>Shop</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-                                <a href="#">Read More</a>
+                                <a href="/project/shop">Link</a>
                             </div>
                         </div>
                 </div>
@@ -33,9 +33,9 @@ export default function index() {
                         <div className={styles.box}>
                             <div className={styles.content}>
                                 <h2>03</h2>
-                                <h3>Card Three</h3>
+                                <h3>ChangeLog</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-                                <a href="#">Read More</a>
+                                <a href="/project/process">Link</a>
                             </div>
                         </div>
                 </div>
@@ -44,9 +44,9 @@ export default function index() {
                         <div className={styles.box}>
                             <div className={styles.content}>
                                 <h2>04</h2>
-                                <h3>Card Four</h3>
+                                <h3>Strapi</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-                                <a href="#">Read More</a>
+                                <a href="https://strapi-demo-208417021.herokuapp.com/">Link</a>
                             </div>
                         </div>
                 </div>
