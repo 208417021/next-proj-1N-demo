@@ -10,10 +10,10 @@ export default function Footer2() {
 
                 <div className={styles["footer-right"]}>
 
-                    <a href="#"><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></a>
-                    <a href="#"><FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon></a>
-                    <a href="#"><FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon></a>
-                    <a href="#"><FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon></a>
+                    <a href="/404"><FontAwesomeIcon icon={faFacebookF}></FontAwesomeIcon></a>
+                    <a href="/404"><FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon></a>
+                    <a href="https://github.com/208417021/next-proj-1N-demo"><FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon></a>
+                    <a href="mailto://208417021@o365.tku.edu.tw"><FontAwesomeIcon icon={faMailBulk}></FontAwesomeIcon></a>
 
                 </div>
 

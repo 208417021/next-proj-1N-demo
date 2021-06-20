@@ -3,7 +3,7 @@ import styles from '../../styles/Process.module.css'
 
 export default function process() {
     return (
-        <Layout>
+        <Layout title="Process">
             感謝老師辛苦指導<strike className={styles.hide}>，淡江大學成功讓我對Python以及Nodejs前後端失去自信以及熱忱，未來我如果踏入相關行業我就是棒槌</strike>
             <p>1. 先把老師在Teams上的next-proj-1N-demo.zip、mealDB-theme.zip下載下來</p>
             <p>2. 建立pages/project/meals.js並把老師的mealDB內的index.html整理成meals</p>
@@ -23,6 +23,13 @@ export default function process() {
             <p>2. 完成Navbar、Footer、Layout</p>
             <p>3. 依照專題所求，嘗試不少網路資源來完成首頁，目前使用簡單card的待之後可以放入學校<a className={styles.hide}>的垃圾</a>作業</p>
             <p>4. 依照專題所求，建立StrAPI app，並push至GitHub<a className={styles.hide}>，但我實在不知道StrAPI到底要用來幹嘛</a></p>
+            <br />
+            <p>6/20完成部分</p>
+            <p>1. 確認老師的Strapi範例多出來部分(如：import/export plugin)，並且補上</p>
+            <p>2. Strapi post到Cloudinary正常，一張圖片生成三張圖(原始、預覽用、壓縮圖)</p>
+            <p>3. 將Strapi depoly部屬至Heroku</p>
+            <p>4. 為配合Project需求，參考網路資源；建立Shop頁面，使得Strapi之上傳圖片可以被運用到</p>
+            <p>5. 修該部分細節(navbar連結、每頁title等)</p>
         </Layout>
     )
 }

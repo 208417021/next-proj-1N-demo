@@ -4,7 +4,7 @@ import styles from '../styles/Index.module.css';
 
 export default function index() {
     return (
-        <Layout>
+        <Layout title="Home">
             <div className={styles.container}>
 
                 <div className={styles.card}>

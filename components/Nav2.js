@@ -25,7 +25,7 @@ export default function Nav2() {
         <div>
             <div className={`${styles.topnav}`} id="myTopnav">
                 <a href="/" className={styles.active}>Home</a>
-                <a href="#about">About</a>
+                <a href="/project/process">Process</a>
                 <div className={styles.dropdown}>
                     <button className={styles.dropbtn}>Project
                         <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
@@ -33,7 +33,7 @@ export default function Nav2() {
                     <div className={styles["dropdown-content"]}>
                         <a href="/project/meals">MealDB</a>
                         <a href="/project/shop">Shop</a>
-                        <a href="/project/process">Process</a>
+                        <a href="https://strapi-demo-208417021.herokuapp.com/">Strapi</a>
                     </div>
                 </div>
     

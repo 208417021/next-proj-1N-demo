@@ -32,7 +32,7 @@ export default function meals() {
     }
 
     return (
-        <Layout>
+        <Layout title="mealDB">
         <div>
             
             <div className={styles.container}>
