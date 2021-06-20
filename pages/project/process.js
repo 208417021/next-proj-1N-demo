@@ -4,6 +4,7 @@ import styles from '../../styles/Process.module.css'
 export default function process() {
     return (
         <Layout title="Process">
+            <br />
             感謝老師辛苦指導<strike className={styles.hide}>，淡江大學成功讓我對Python以及Nodejs前後端失去自信以及熱忱，未來我如果踏入相關行業我就是棒槌</strike>
             <p>1. 先把老師在Teams上的next-proj-1N-demo.zip、mealDB-theme.zip下載下來</p>
             <p>2. 建立pages/project/meals.js並把老師的mealDB內的index.html整理成meals</p>
@@ -31,8 +32,6 @@ export default function process() {
             <p>4. 為配合Project需求，參考網路資源；建立Shop頁面，使得Strapi之上傳圖片可以被運用到</p>
             <p>5. 修改一些細節(navbar連結、每頁title、首頁Index連結等)</p>
             <br />
-            <h3>心得</h3>
-            
         </Layout>
     )
 }
