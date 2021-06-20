@@ -10,7 +10,7 @@ export default function shop() {
                 {/* Card one */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/1_49a57489bf.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/1_49a57489bf.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -46,7 +46,7 @@ export default function shop() {
                 {/* Card two */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/2_11a4392dfe.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/2_11a4392dfe.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -82,7 +82,7 @@ export default function shop() {
                 {/* Card three */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/3_342e52285e.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/3_342e52285e.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -118,7 +118,7 @@ export default function shop() {
                 {/* Card four */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173405/4_8d574e0953.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173405/4_8d574e0953.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -154,7 +154,7 @@ export default function shop() {
                 {/* Card five */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/5_c8b4791a45.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/5_c8b4791a45.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -190,7 +190,7 @@ export default function shop() {
                 {/* Card six */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/6_a3b16820f1.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173406/6_a3b16820f1.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -226,7 +226,7 @@ export default function shop() {
                 {/* Card seven */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173408/7_ab1cb8a311.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173408/7_ab1cb8a311.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
@@ -262,7 +262,7 @@ export default function shop() {
                 {/* Card eight */}
                 <div className={styles.card}>
                     <div className={styles.imgBx}>
-                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173408/8_7fb5850528.jpg" alt="" srcset="" />
+                        <img src="https://res.cloudinary.com/tku-edu-tw/image/upload/v1624173408/8_7fb5850528.jpg" alt="" />
                         <ul className={styles.action}>
                             <li>
                                 <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
